@@ -3,12 +3,13 @@ import java.util.List;
 
 public class Category {
     private String name;
-    private static int itens;
+    private static int nextId = 1;
+    private int id;
     private List<Material> materials;
 
     public Category(String name) {
         this.name = name;
-        itens++;
+        this.id = nextId++;
         this.materials = new ArrayList<>();
     }
 
@@ -16,8 +17,8 @@ public class Category {
         return this.name;
     }
 
-    public static int getItens() {
-        return itens;
+    public int getId() {
+        return id;
     }
 
     public List<Material> getMaterials() {
