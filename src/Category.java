@@ -35,8 +35,5 @@ public class Category {
         for(int i = 0; i < materials.size(); i++) {
             System.out.println(materials.get(i).getTitle());
         }
-        System.out.println("------------------------------------------------");
-
     }
-
 }

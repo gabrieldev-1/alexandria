@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
-    private List<Category> categories;
+    public List<Category> categories;
 
     public Database() {
         this.categories = new ArrayList<>();
@@ -28,7 +28,7 @@ public class Database {
                 return;
             }
         }
-        
+
         categories.add(newCategory);
 
     }
@@ -41,17 +41,12 @@ public class Database {
             return;
         }
 
+        System.out.println("-------------- CATEGORIAS --------------");
+
         for(int i = 0; i < listSize; i++) {    
             System.out.println("(" + categories.get(i).getId() +")" + categories.get(i).getName());
         }
+
+        System.out.println("----------------------------------------");
     }
-
-    public static void main(String[] args) {
-
-        Database database = new Database();
-        database.addCategory("Java");
-        database.addCategory("Python");
-        database.printCategorys();
-    }
-
 }
