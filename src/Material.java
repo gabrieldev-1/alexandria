@@ -5,14 +5,16 @@ public class Material {
     private String pathFile;
     private String category;
     private int material_id;
+    private int next_material_id;
     
-    public Material(String title, String description, String author, String pathFile, String category,int material_id) {
+    public Material(String title, String description, String author, String pathFile, String category) {
         this.title = title;
         this.description = description;
         this.author = author;
         this.pathFile = pathFile;
         this.category = category;
-        this.material_id = material_id;
+        this.material_id = next_material_id++;
+
     }
 
     public String getPathFile() {

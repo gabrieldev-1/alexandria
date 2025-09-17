@@ -33,6 +33,19 @@ public class Database {
 
     }
 
+    public void addMaterial(String title, String description, String author, String pathFile, String categoryName) {
+        for(Category cat : categories) {
+            if(cat.getName().equals(categoryName)) {
+                Material newMaterial = new Material(title, description, author, pathFile, pathFile);
+                cat.getMaterials().add(newMaterial);
+                return;
+            }
+        }
+
+        System.out.println("Categoria nao encontrada.");
+
+    }
+
     public void printCategorys() {
         int listSize = categories.size();
 

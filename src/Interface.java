@@ -11,6 +11,10 @@ public class Interface {
         database.addCategory("Ruby");
         database.addCategory("Data Structure");
 
+        database.addMaterial("Introducao a Java", "guia para iniciantes em Java", "Gabriel dos Santos", "#", "Java");
+
+
+
         
 
         System.out.println("\n" +

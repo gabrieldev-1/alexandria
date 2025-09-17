@@ -25,15 +25,11 @@ public class Category {
         return this.materials;
     }
 
-    public void addMaterial(Material material) {
-        this.materials.add(material);
-    }
-
     public void printMaterials() {
 
         System.out.println("----------- materias(" + this.getName() + ") -----------");
         for(int i = 0; i < materials.size(); i++) {
-            System.out.println(materials.get(i).getTitle());
+            materials.get(i).printInfos();
         }
     }
 }
