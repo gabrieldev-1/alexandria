@@ -1,21 +1,32 @@
 import java.util.Scanner;
 
-public class Interface {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Database database = new Database();
+        MaterialRepository database = new MaterialRepository();
 
+        // Adiciona categorias
         database.addCategory("Java");
         database.addCategory("Python");
         database.addCategory("C");
         database.addCategory("Ruby");
         database.addCategory("Data Structure");
 
-        database.addMaterial("Introducao a Java", "guia para iniciantes em Java", "Gabriel dos Santos", "#", "Java");
+        // Popula cada categoria com materiais diferentes
+        database.addMaterial("Introducao a Java", "Guia para iniciantes em Java", "Gabriel dos Santos", "#", "Java");
+        database.addMaterial("Java Avançado", "Tópicos avançados de Java", "Maria Oliveira", "#", "Java");
 
+        database.addMaterial("Python Básico", "Aprenda Python do zero", "João Silva", "#", "Python");
+        database.addMaterial("Python para Data Science", "Python aplicado à ciência de dados", "Ana Souza", "#", "Python");
 
+        database.addMaterial("C Essencial", "Fundamentos da linguagem C", "Carlos Lima", "#", "C");
+        database.addMaterial("Estruturas em C", "Estruturas de dados em C", "Fernanda Costa", "#", "C");
 
-        
+        database.addMaterial("Ruby on Rails", "Desenvolvimento web com Ruby", "Lucas Pereira", "#", "Ruby");
+        database.addMaterial("Ruby Básico", "Primeiros passos com Ruby", "Juliana Ramos", "#", "Ruby");
+
+        database.addMaterial("Algoritmos", "Introdução a algoritmos", "Pedro Martins", "#", "Data Structure");
+        database.addMaterial("Estruturas de Dados", "Listas, pilhas e filas", "Sofia Alves", "#", "Data Structure");
 
         System.out.println("\n" +
                 "    _    _                          _      _       _ \n" +

@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Database {
+public class MaterialRepository {
     public List<Category> categories;
 
-    public Database() {
+    public MaterialRepository() {
         this.categories = new ArrayList<>();
         
     }
