@@ -56,7 +56,7 @@ public class Interface {
                     for (Category currCategory : database.categories) {
                         if (currCategory.getId() == categoryChoice) {
                             categoryFound = true;
-                            currCategory.printMaterials();
+                            database.printMaterials(currCategory);
                             break;
                         }
                     }

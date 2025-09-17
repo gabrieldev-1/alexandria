@@ -5,7 +5,7 @@ public class Material {
     private String pathFile;
     private String category;
     private int material_id;
-    private int next_material_id;
+    private static int next_material_id; // CORRIGIDO
     
     public Material(String title, String description, String author, String pathFile, String category) {
         this.title = title;
@@ -39,15 +39,5 @@ public class Material {
 
     public int getId() {
         return this.material_id;
-    }
-
-    public void printInfos() {
-        System.out.println("-------------- Informacoes do material --------------");
-        System.out.println("Titulo: " + this.getTitle());
-        System.out.println("Descricao: " + this.getDescription());
-        System.out.println("Autor: " + this.getAuthor());
-        System.out.println("Categoria: " + this.getCategory());
-        System.out.println("-----------------------------------------------------");
-
     }
 }

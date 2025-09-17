@@ -24,12 +24,4 @@ public class Category {
     public List<Material> getMaterials() {
         return this.materials;
     }
-
-    public void printMaterials() {
-
-        System.out.println("----------- materias(" + this.getName() + ") -----------");
-        for(int i = 0; i < materials.size(); i++) {
-            materials.get(i).printInfos();
-        }
-    }
 }
