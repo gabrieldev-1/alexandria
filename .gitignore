@@ -1,0 +1,8 @@
+# Ignora arquivos compilados e temporários
+*.class
+.DS_Store
+*.log
+
+# Ignora credenciais
+config.properties
+DatabaseManager.java
