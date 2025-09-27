@@ -4,11 +4,11 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] agrs) {
 
-        System.out.println("Testando conexxao com o servidor...");
+        System.out.println("Testando conexao com o servidor...");
 
         try(Connection conn = DatabaseManager.getConnection()) {
             if (conn != null) {
-                System.out.println("Conexao estabelecida com suscesso!");
+                System.out.println("Conexao estabelecida com sucesso!");
             
             } else {
                 System.out.println("Falha na conexao. Conexao retornou nula.");
