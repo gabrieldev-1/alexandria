@@ -1,6 +1,8 @@
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import repository.DatabaseManager;
+
 public class Main {
     public static void main(String[] agrs) {
 
@@ -18,6 +20,6 @@ public class Main {
         } catch (SQLException ex) {
             System.err.println("Erro na conexao: " + ex.getMessage());
         }
-
+ 
     }
 }

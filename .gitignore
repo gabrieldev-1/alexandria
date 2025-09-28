@@ -6,3 +6,4 @@
 # Ignora credenciais
 config.properties
 DatabaseManager.java
+database.sql
